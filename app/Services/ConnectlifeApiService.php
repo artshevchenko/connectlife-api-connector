@@ -137,10 +137,10 @@ class ConnectlifeApiService
                 continue;
             }
 
-            if (!in_array($device['deviceTypeCode'], ['009', '006'], true)) {
+            /** if (!in_array($device['deviceTypeCode'], ['009', '006'], true)) {
                 Log::info("Skipping device with unknown type code: $id", $device);
                 continue;
-            }
+            } */
             $acDevices[] = new AcDevice($device);
         }
 
